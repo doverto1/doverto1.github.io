@@ -23,6 +23,8 @@ jobs:
           python-version: 3.x
       - run: pip install mkdocs-material
       - run: mkdocs build --clean
+      - run: cat site/index.html | grep -i "YOUR_TEST_STRING"
+      
       - uses: actions/upload-pages-artifact@v3
         with:
           path: site
