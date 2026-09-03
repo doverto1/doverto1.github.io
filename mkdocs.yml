@@ -2,7 +2,8 @@
 site_name: My Docs
 site_url: https://doverto1.github.io/
 repo_url: https://github.com/doverto1/doverto1.github.io
-docs_dir: docs
+docs_dir: docs_src
+site_dir: docs
 
 theme:
   name: material
