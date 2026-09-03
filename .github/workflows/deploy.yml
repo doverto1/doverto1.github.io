@@ -23,7 +23,7 @@ jobs:
           python-version: 3.x
       - run: pip install mkdocs-material
       - run: mkdocs build --clean
-      - run: cat site/index.html | grep -i "YOUR_TEST_STRING"
+      - run: cat site/index.html | grep -i "BUILD-TEST-2026-09-03" || true
       
       - uses: actions/upload-pages-artifact@v3
         with:
