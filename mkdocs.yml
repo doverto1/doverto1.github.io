@@ -1,0 +1,54 @@
+---
+site_name: My Docs
+site_url: https://doverto1.github.io/
+repo_url: https://github.com/doverto1/doverto1.github.io
+docs_dir: docs
+
+theme:
+  name: material
+  custom_dir: overrides
+  logo: assets/images/logo-white.png
+  favicon: assets/images/favicon.ico
+  font:
+    text: Arial
+    code: Monaspace Neon
+  features:
+    - navigation.instant
+    - navigation.sections
+    - content.code.copy
+    - search.highlight
+  palette:
+    - scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+extra_css:
+  - assets/css/extra.css
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - tables
+  - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tilde
+  - toc:
+      permalink: true
+
+extra:
+  generator: false
